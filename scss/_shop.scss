@@ -1,26 +1,29 @@
 .shop {
-    border: 1px solid red;
-    height: 1000px;
+    // border: 1px solid red;
+    height: auto;
     background: #F7F7F7;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-top: 105px;
+
+    // position: relative;
 }
 
 .shop--item {
-    border: 1px solid greenyellow;
+    // border: 1px solid greenyellow;
     width: 1124px;
     height: 370px;
     margin-bottom: 37px;
     display: flex;
     flex-direction: row;
+    background: #FFFFFF;
 }
 
 .shop--item--container {
-    border: 1px solid violet;
-    width: 600px;
+    // border: 1px solid violet;
+    width: 684px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,33 +33,132 @@
 
 .shop--item--title {
     font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 42px;
-/* identical to box height, or 117% */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 30px;
+}
 
-
-color: #000000;
-margin-bottom: 30px;
+.shop--item--title--two {
+    width: 259px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 69px;
 }
 
 .shop--item--paragraph {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-/* or 138% */
-
-
-color: #000000;
-margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 50px;
 }
-
+.shop--item--paragraph--two {
+    width: 416px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
 .shop--item--separator {
-    // color:$color-uno;
     width: 327px;
     height: 0;
-    border: 4px solid #FB3B64;;
+    border: 4px solid $color-uno;
+}
+
+.shop--item--separator--two {
+    width: 327px;
+    height: 0;
+    border: 4px solid $color-principal;
+}
+
+.shop--item--separator--three {
+    width: 327px;
+    height: 0;
+    border: 4px solid $color-dos;
+}
+
+.shop--item--mac {
+    width: 440px;
+    height: 370px;
+    position: relative;
+    z-index: 1;
+
+    img {
+        // border: 1px solid black;
+        width: 386.4px;
+        height: 219px;
+        margin-top: 113px;
+        margin-right: 117.5px;
+        z-index: 1;
+    }
+}
+
+.shop--item--iphone {
+    // border: 1px solid gold;
+    width: 684px;
+    height: 370px;
+    position: relative;
+    z-index: 1;
+
+    img {
+        // border: 1px solid black;
+        width: 426px;
+        height: 328px;
+        margin-top: 29px;
+        margin-left: 70px;
+        z-index: 1;
+    }
+}
+
+.shop--item--figure {
+    width: 180px;
+    height: 180px;
+
+
+    background: #FB3B64;
+    border-radius: 41px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 38px;
+    right: 71px;
+    z-index: -1;
+}
+
+.shop--item--circle {
+    position: absolute;
+    width: 320px;
+height: 320px;
+border-radius: 50%;
+left: 70px;
+top: 12px;
+z-index: -1;
+background: #08A6E4;
+}
+
+.shop--item--img {
+    width: 440px;
+    height: 370px;
+    background-color: $color-dos;
+}
+
+.img {
+    // border: 1px solid black;
+    width: 265.73px;
+    height: 207.72px;
+    margin-top: 98.21px;
+    margin-left: 62.31px;
 }
