@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background: #F7F7F7;;
 }
 
 .popularity--title {
@@ -33,7 +34,22 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    span{
+        // border: 1px solid navy;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 16px;
+        left: 35px;
+    }
 }
+
+// .team{
+//     border: 1px solid navy;
+//     width: 130px;
+//     height: 130px;
+// }
 
 .popularity--circle {
     width: 62.71px;
