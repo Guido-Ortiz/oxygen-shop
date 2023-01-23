@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oxygen Shop</title>
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <navbar>
-        OXYGEN Shop
-        <ul>
+    <navbar class="navbar">
+        <div class="navbar--title">OXYGEN Shop</div>
+        <ul class="navbar--menu">
             <li>Why us</li>
             <li>Benefits</li>
             <li>Prices</li>
@@ -21,53 +21,59 @@
     </navbar>
 
     <!-- LANDING -->
-    <div>
-        <h1>Sell More!</h1>
-        <h3>Open shop on our platform and increase your sales</h3>
-        <button>Open your shop</button>
-        <img alt="Imagen de fondo"/>
+    <div class="landing">
+        <h1 class="landing--title">Sell More!</h1>
+        <h3 class="landing--paragraph">Open shop on our platform and increase your sales</h3>
+        <button class="landing--btn">Open your shop</button>
+        <div alt="Imagen de fondo" class="landing--img"></div>
     </div>
 
     <!-- POPULARITY SECTION -->
-    <div>
-        <h3>The most popular sales platform in country</h3>
-        <div>
-            <div>
-                <span>100000+</span>
-                <h4>daily entries</h4>
+    <div class="popularity">
+        <h3 class="popularity--title">The most popular sales platform in country</h3>
+        <div class="popularity--items">
+            <div class="popularity--item">
+                <div class="popularity--circle"></div>
+                <span class="popularity--number">100000+</span>
+                <h4 class="popularity--text">daily entries</h4>
             </div>
-            <div>
-                <span>200000+</span>
-                <h4>seen products every day</h4>
+            <div class="popularity--item">
+                <div class="popularity--circle--two"></div>
+                <span class="popularity--number">200000+</span>
+                <h4 class="popularity--text">seen products every day</h4>
             </div>
-            <div>
-                <span>100000+</span>
-                <h4>added posts daily</h4>
+            <div class="popularity--item">
+                <div class="popularity--circle--three"></div>
+                <span class="popularity--number">10000+</span>
+                <h4 class="popularity--text">added posts daily</h4>
             </div>
         </div>
     </div>
 
     <!-- SHOP DESCRIPTION SECTION -->
-    <div>
-        <div>
-            <div>
-                <img />
-                <div>fondo</div>
+    <div class="shop">
+        <div class="shop--item">
+            <div class="shop--item--container">
+                <h2 class="shop--item--title">Be always first</h2>
+                <p class="shop--item--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis expedita repellat commodi reiciendis, dignissimos ex ut odio possimus vero odit, labore soluta fugit ullam consequatur vitae. Officia, soluta pariatur?</p>
+                <div class="shop--item--separator"></div>
             </div>
-            <h2>Be always first</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis expedita repellat commodi reiciendis, dignissimos ex ut odio possimus vero odit, labore soluta fugit ullam consequatur vitae. Officia, soluta pariatur?</p>
+            <div>
+                <img src="./resources/mac.png" alt="Macbook" />
+                <div></div>
+            </div>
         </div>
 
-        <div>
+        <div class="shop--item">
             <div>
-                <img />
+                <img src="./resources/mac.png" alt="Macbook" />
                 <div>fondo</div>
             </div>
             <h2>Ypur shop is where you are!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis expedita repellat commodi reiciendis, dignissimos ex ut odio possimus vero odit, labore soluta fugit ullam consequatur vitae. Officia, soluta pariatur?</p>
         </div>
 
-        <div>
+        <div class="shop--item">
             <h2>Increase recognition your brand!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis expedita repellat commodi reiciendis, dignissimos ex ut odio possimus vero odit, labore soluta fugit ullam consequatur vitae. Officia, soluta pariatur?</p>
             <img />

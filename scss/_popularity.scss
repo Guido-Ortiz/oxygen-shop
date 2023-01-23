@@ -1,0 +1,83 @@
+.popularity {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popularity--title {
+    margin-top: 22px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+.popularity--items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.popularity--item {
+    // border: 1px solid blue;
+    width: 100px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popularity--circle {
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    background: $color-uno;
+}
+
+.popularity--circle--two {
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    background: $color-principal;
+}
+
+.popularity--circle--three {
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    background: $color-dos;
+}
+
+.popularity--number {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    letter-spacing: 5.96px;
+
+    color: #000000;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.popularity--text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #A5A5A5;
+}
