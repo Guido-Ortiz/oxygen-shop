@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .ejemplo {
+    border: 1px solid blue;
+  }
+}/*# sourceMappingURL=style.css.map */
