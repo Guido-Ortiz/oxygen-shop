@@ -1,19 +1,15 @@
 // DESKTOP
 @media (min-width:992px){
-
     .form {
-        // border: 1px solid red;
         margin-top: 80px;
         background: #F7F7F7;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        // height: 1000px;
     }
     
     .form--contact {
-        // border: 1px solid yellow;
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -44,12 +40,9 @@
     }
     
     .form--contact--info {
-        // border: 1px solid greenyellow;
         display: flex;
         flex-direction: row;
-    
         div {
-            // border: 1px solid violet;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -57,7 +50,6 @@
             width: 160px;
     
             span {
-                // border: 1px solid teal;
                 width: 22px;
                 height: 18px;
                 color: #08A6E4;
@@ -65,7 +57,6 @@
             }
     
             h5 {
-                // border: 1px solid salmon;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 600;
@@ -77,7 +68,6 @@
     }
     
     .form--data {
-        // border: 1px solid fuchsia;
         width: 440px;
         display: flex;
         flex-direction: column;
@@ -134,17 +124,14 @@
     .form--checkbox {
         width: 24px;
         height: 24px;
-        // border: 1px solid darkorange;
     }
     
     .form--consent {
-        // border: 1px solid firebrick;
         display: flex;
         flex-direction: row !important;
         height: auto;
     
         p {
-            // border: 1px solid forestgreen;
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
@@ -152,7 +139,6 @@
             line-height: 16px;
             color: #707070;
             margin-left: 10px;
-            // margin-right: 10px;
         }
     }
     
@@ -162,7 +148,6 @@
     // MOBILE
     @media (max-width:425px){
         .form {
-            // border: 1px solid red;
             margin-top: 80px;
             background: #F7F7F7;
             display: flex;
@@ -170,11 +155,9 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            // height: 1000px;
         }
         
         .form--contact {
-            // border: 1px solid yellow;
             width: 312px;
             display: flex;
             flex-direction: column;
@@ -205,15 +188,12 @@
         }
         
         .form--contact--info {
-            // border: 1px solid greenyellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            // flex-wrap: wrap;
         
             div {
-                // border: 1px solid violet;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
@@ -221,7 +201,6 @@
                 width: 160px;
         
                 span {
-                    // border: 1px solid teal;
                     width: 22px;
                     height: 18px;
                     color: #08A6E4;
@@ -229,7 +208,6 @@
                 }
         
                 h5 {
-                    // border: 1px solid salmon;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 600;
@@ -241,7 +219,6 @@
         }
         
         .form--data {
-            // border: 1px solid fuchsia;
             width: 312px;
             display: flex;
             flex-direction: column;
@@ -298,21 +275,16 @@
         .form--checkbox {
             width: 24px;
             height: 24px;
-            // margin-left: 40px;
-            // border: 1px solid darkorange;
         }
         
         .form--consent {
-            // border: 1px solid firebrick;
             display: flex;
             flex-direction: row !important;
             justify-content: center;
             align-items: center;
             height: auto;
             width: 300px;
-            // margin-left: 20px;
             p {
-                // border: 1px solid forestgreen;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
@@ -329,7 +301,6 @@
     // TABLETS
     @media (min-width:425px) and (max-width:992px){
         .form {
-            // border: 1px solid red;
             margin-top: 80px;
             background: #F7F7F7;
             display: flex;
@@ -337,11 +308,9 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            // height: 1000px;
         }
         
         .form--contact {
-            // border: 1px solid yellow;
             width: 312px;
             display: flex;
             flex-direction: column;
@@ -372,15 +341,12 @@
         }
         
         .form--contact--info {
-            // border: 1px solid greenyellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            // flex-wrap: wrap;
         
             div {
-                // border: 1px solid violet;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
@@ -388,7 +354,6 @@
                 width: 160px;
         
                 span {
-                    // border: 1px solid teal;
                     width: 22px;
                     height: 18px;
                     color: #08A6E4;
@@ -396,7 +361,6 @@
                 }
         
                 h5 {
-                    // border: 1px solid salmon;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 600;
@@ -408,7 +372,6 @@
         }
         
         .form--data {
-            // border: 1px solid fuchsia;
             width: 312px;
             display: flex;
             flex-direction: column;
@@ -465,21 +428,17 @@
         .form--checkbox {
             width: 24px;
             height: 24px;
-            // margin-left: 40px;
-            // border: 1px solid darkorange;
         }
         
         .form--consent {
-            // border: 1px solid firebrick;
             display: flex;
             flex-direction: row !important;
             justify-content: center;
             align-items: center;
             height: auto;
             width: 300px;
-            // margin-left: 20px;
+    
             p {
-                // border: 1px solid forestgreen;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
