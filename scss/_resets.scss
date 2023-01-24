@@ -3,5 +3,9 @@
     margin:0;
     list-style:none;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-width: 320px;
+    border: 1px solid greenyellow;
 }

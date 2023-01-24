@@ -1,99 +1,423 @@
-.popularity {
-    // border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: #F7F7F7;;
-}
-
-.popularity--title {
-    margin-top: 22px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
-}
-
-.popularity--items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 60px;
-}
-
-.popularity--item {
-    // border: 1px solid blue;
-    width: 110px;
-    margin: 0 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    span{
-        // border: 1px solid navy;
-        width: 130px;
-        height: 130px;
-        position: absolute;
-        top: 16px;
-        left: 35px;
-    }
-}
-
-// .team{
-//     border: 1px solid navy;
-//     width: 130px;
-//     height: 130px;
+// .popularity {
+//     // border: 1px solid red;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     background: #F7F7F7;;
 // }
 
-.popularity--circle {
-    width: 62.71px;
-    height: 62.71px;
-    border-radius: 50%;
-    background: $color-uno;
+// .popularity--title {
+//     margin-top: 22px;
+//     font-family: 'Raleway';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 36px;
+//     line-height: 42px;
+//     text-align: center;
+//     color: #000000;
+// }
+
+// .popularity--items {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: flex-start;
+//     margin-top: 60px;
+// }
+
+// .popularity--item {
+//     // border: 1px solid blue;
+//     width: 110px;
+//     margin: 0 50px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     position: relative;
+//     span{
+//         // border: 1px solid navy;
+//         width: 130px;
+//         height: 130px;
+//         position: absolute;
+//         top: 16px;
+//         left: 35px;
+//     }
+// }
+
+// // .team{
+// //     border: 1px solid navy;
+// //     width: 130px;
+// //     height: 130px;
+// // }
+
+// .popularity--circle {
+//     width: 62.71px;
+//     height: 62.71px;
+//     border-radius: 50%;
+//     background: $color-uno;
+// }
+
+// .popularity--circle--two {
+//     width: 62.71px;
+//     height: 62.71px;
+//     border-radius: 50%;
+//     background: $color-principal;
+// }
+
+// .popularity--circle--three {
+//     width: 62.71px;
+//     height: 62.71px;
+//     border-radius: 50%;
+//     background: $color-dos;
+// }
+
+// .popularity--number {
+//     font-family: 'Raleway';
+//     font-style: normal;
+//     font-weight: 800;
+//     font-size: 20px;
+//     line-height: 24px;
+//     /* identical to box height, or 120% */
+
+//     text-align: center;
+//     letter-spacing: 5.96px;
+
+//     color: #000000;
+//     margin-top: 22px;
+//     margin-bottom: 20px;
+// }
+
+// .popularity--text {
+//     font-family: 'Raleway';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 17px;
+//     line-height: 20px;
+//     text-align: center;
+//     color: #A5A5A5;
+// }
+
+
+
+
+@media (min-width:992px) {
+
+    .popularity {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #F7F7F7;
+        ;
+    }
+
+    .popularity--title {
+        margin-top: 22px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .popularity--items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .popularity--item {
+        // border: 1px solid blue;
+        width: 110px;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        span {
+            // border: 1px solid navy;
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 16px;
+            left: 35px;
+        }
+    }
+
+    // .team{
+    //     border: 1px solid navy;
+    //     width: 130px;
+    //     height: 130px;
+    // }
+
+    .popularity--circle {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-uno;
+    }
+
+    .popularity--circle--two {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-principal;
+    }
+
+    .popularity--circle--three {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-dos;
+    }
+
+    .popularity--number {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+
+        text-align: center;
+        letter-spacing: 5.96px;
+
+        color: #000000;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+
+    .popularity--text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #A5A5A5;
+    }
+
+
 }
 
-.popularity--circle--two {
-    width: 62.71px;
-    height: 62.71px;
-    border-radius: 50%;
-    background: $color-principal;
+
+// MOBILE
+@media (max-width:425px) {
+
+    .popularity {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #F7F7F7;
+        ;
+    }
+
+    .popularity--title {
+        margin-top: 22px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .popularity--items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .popularity--item {
+        // border: 1px solid blue;
+        width: 110px;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        span {
+            // border: 1px solid navy;
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 16px;
+            left: 35px;
+        }
+    }
+
+    // .team{
+    //     border: 1px solid navy;
+    //     width: 130px;
+    //     height: 130px;
+    // }
+
+    .popularity--circle {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-uno;
+    }
+
+    .popularity--circle--two {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-principal;
+    }
+
+    .popularity--circle--three {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-dos;
+    }
+
+    .popularity--number {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+
+        text-align: center;
+        letter-spacing: 5.96px;
+
+        color: #000000;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+
+    .popularity--text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #A5A5A5;
+    }
+
 }
 
-.popularity--circle--three {
-    width: 62.71px;
-    height: 62.71px;
-    border-radius: 50%;
-    background: $color-dos;
-}
 
-.popularity--number {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height, or 120% */
-
-    text-align: center;
-    letter-spacing: 5.96px;
-
-    color: #000000;
-    margin-top: 22px;
-    margin-bottom: 20px;
-}
-
-.popularity--text {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    color: #A5A5A5;
+// TABLETS
+@media (min-width:425px) and (max-width:992px) {
+    .popularity {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #F7F7F7;;
+    }
+    
+    .popularity--title {
+        margin-top: 22px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .popularity--items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    
+    .popularity--item {
+        // border: 1px solid blue;
+        width: 110px;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        span{
+            // border: 1px solid navy;
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 16px;
+            left: 35px;
+        }
+    }
+    
+    // .team{
+    //     border: 1px solid navy;
+    //     width: 130px;
+    //     height: 130px;
+    // }
+    
+    .popularity--circle {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-uno;
+    }
+    
+    .popularity--circle--two {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-principal;
+    }
+    
+    .popularity--circle--three {
+        width: 62.71px;
+        height: 62.71px;
+        border-radius: 50%;
+        background: $color-dos;
+    }
+    
+    .popularity--number {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+    
+        text-align: center;
+        letter-spacing: 5.96px;
+    
+        color: #000000;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .popularity--text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #A5A5A5;
+    }
+    
 }

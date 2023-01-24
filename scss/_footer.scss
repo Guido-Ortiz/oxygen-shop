@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 137px;
+    // margin-left: 137px;
 
     h3 {
         font-family: 'Raleway';
@@ -58,5 +58,178 @@
         border-radius: 50%;
         background: #08A6E4;
         color: #fff;
+    }
+}
+
+
+// DESKTOP
+
+@media (min-width:992px){
+
+.footer--text {
+    margin-left: 137px;
+    h3 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 30px;
+        color: #08A6E4;
+        margin-bottom: 7px;
+    }
+
+    h6 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        color: #A5A5A5;
+    }
+}
+
+.footer--icons{
+    // border: 1px solid red;
+    margin-right: 61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    i{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #08A6E4;
+        color: #fff;
+    }
+}
+}
+
+
+// MOBILE
+@media (max-width:425px){
+    .footer {
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer--text {
+        // border: 1px solid firebrick;
+        // margin-right: 50px;
+        // margin-left: 137px;
+    
+        h3 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 30px;
+            color: #08A6E4;
+            margin-bottom: 7px;
+        }
+    
+        h6 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 15px;
+            color: #A5A5A5;
+        }
+    }
+    
+    .footer--icons{
+        // border: 1px solid red;
+        // margin-left: 50px;
+        // margin-right: 61px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80px;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        i{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #08A6E4;
+            color: #fff;
+        }
+    }
+}
+
+
+// TABLETS
+@media (min-width:425px) and (max-width:992px){
+    .footer {
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer--text {
+        // border: 1px solid firebrick;
+        // margin-right: 50px;
+        margin-left: 90px;
+    
+        h3 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 30px;
+            color: #08A6E4;
+            margin-bottom: 7px;
+        }
+    
+        h6 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 15px;
+            color: #A5A5A5;
+        }
+    }
+    
+    .footer--icons{
+        // border: 1px solid red;
+        // margin-left: 50px;
+        // margin-right: 61px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80px;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        i{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #08A6E4;
+            color: #fff;
+        }
     }
 }

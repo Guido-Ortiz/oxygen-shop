@@ -1,23 +1,155 @@
-.landing {
-    // border: 1px solid red;
-    // border-bottom: rgba(0, 0, 0, 0.29);
-    // border-bottom: 1px solid saddlebrown !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 130px;
-    background: #F7F7F7;;
+/* MEDIA QUERIE - MOBILE */
+@media only screen and (max-width:425px) {
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        background: #F7F7F7;
+        ;
+    }
+
+    .landing--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 49px;
+        line-height: 57px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .landing--paragraph {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 37px;
+        padding: 0 30px;
+    }
+
+    .landing--btn {
+        width: 280px;
+        height: 67px;
+        background: $color-principal;
+        box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+        border-radius: 40px;
+        border: none;
+        // padding: 23px 157px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .landing--img {
+        display: none;
+        height: 594px;
+        width: 100%;
+        background-color: #FFFFFF;
+        color: white;
+        position: relative;
+        background-image: url("../resources/landing.png");
+        background-size: cover;
+        margin-top: 20px;
+        align-self: center;
+        position: absolute;
+        width: 100vw;
+        height: 267px;
+        left: -201.5px;
+        top: 434px;
+        // margin-bottom: 800px;
+    }
 }
 
-/* MEDIA QUERIE - MOBILE */
-@media (max-width:576px) {}
-
 /* MEDIA QUERIE - TABLETS */
-@media (min-width:576px)and(max-width:992px) {}
+@media (min-width:425px) and (max-width:992px) {
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        background: #F7F7F7;
+        ;
+    }
+
+    .landing--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 49px;
+        line-height: 57px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .landing--paragraph {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 37px;
+        padding: 0 30px;
+    }
+
+    .landing--btn {
+        width: 280px;
+        height: 67px;
+        background: $color-principal;
+        box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+        border-radius: 40px;
+        border: none;
+        // padding: 23px 157px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .landing--img {
+        height: 594px;
+        width: 100vw;
+        background-color: #FFFFFF;
+        color: white;
+        position: relative;
+        background-image: url("../resources/landing.png");
+        background-size: cover;
+        margin-top: 20px;
+        align-self: center;
+    }
+}
 
 /* MEDIA QUERIE - DESKTOP */
 @media (min-width:992px) {
+    .landing {
+        // border: 1px solid red;
+        // border-bottom: rgba(0, 0, 0, 0.29);
+        // border-bottom: 1px solid saddlebrown !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 130px;
+        background: #F7F7F7;
+        ;
+    }
+
     .landing--title {
         font-family: 'Raleway';
         font-style: normal;

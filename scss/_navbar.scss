@@ -142,88 +142,226 @@
 
 
 nav {
-    background: #222;
-    padding: 0 15px;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  .menu,
-  .submenu {
-    list-style-type: none;
-  }
-  .logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 0;
-  }
-  .item {
-    padding: 10px;
-  }
-  .item.button {
-    padding: 9px 5px;
-  }
-  .item:not(.button) a:hover,
-  .item a:hover::after {
-    color: #ccc;
-  }
-  /* Mobile menu */
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  height: 70px;
+  // min-width: 320px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  // color: white;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 3.28px;
+  text-transform: uppercase;
+  color: #A5A5A5;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  // font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+  color: #A5A5A5;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37px;
+  color: #08A6E4;
+  margin-left: 25px;
+  margin-top: 17px;
+}
+
+a,
+.toggle a {
+  font-size: 20px;
+  // color: #08A6E4;
+
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+.item--start {
+  padding-top: 28px !important;
+  color: #000000 !important;
+}
+
+/* Mobile menu */
+@media (max-width:600px) {
+
+
   .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    // border: 1px solid red;
   }
-  .menu li a {
-    display: block;
-    padding: 15px 5px;
-  }
-  .menu li.subitem a {
-    padding: 15px;
-  }
+
   .toggle {
     order: 1;
-    font-size: 20px;
   }
+
   .item.button {
     order: 2;
   }
+
   .item {
-    order: 3;
     width: 100%;
     text-align: center;
+    order: 3;
     display: none;
   }
-  .active .item {
+
+  .item.active {
     display: block;
   }
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .toggle {
+    flex: 1;
+    text-align: right;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
   .button.secondary {
-    /* divider between buttons and menu links */
-    border-bottom: 1px #444 solid;
+    border: 0;
   }
-  /* Submenu up from mobile screens */
-  .submenu {
+
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: 1px #006d6d solid;
+  }
+
+  .button.secondary a {
+    background: transparent;
+  }
+
+  .button a:hover {
+    text-decoration: none;
+  }
+
+  .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959;
+  }
+
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop menu */
+@media (min-width: 900px) {
+// @media all and (min-width: 900px) {
+  nav {
+    height: 70px;
+  }
+
+  .menu {
+    height: 70px;
+  }
+
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
     display: none;
   }
-  .submenu-active .submenu {
-    display: block;
+
+
+  .item {
+    // order: 1;
+    margin: 0 52.5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #A5A5A5;
   }
-  .has-submenu i {
-    font-size: 12px;
+
+  .logo {
+    order: 0;
+    margin-left: 136px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    color: #08A6E4 !important;
   }
-  .has-submenu > a::after {
-    font-family: "Font Awesome 5 Free";
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 900;
-    content: "\f078";
-    color: white;
-    padding-left: 5px;
+
+  .item--start {
+    // border: 1px solid gold;
+    height: 70px;
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
+    border-bottom: 4px solid #08A6E4;
+    vertical-align: middle !important;
+    padding-top: 138px;
+    color: #000000;
+    // margin-top: 28px;
   }
-  .subitem a {
-    padding: 10px 15px;
+
+  .button {
+    order: 2;
   }
-  .submenu-active {
-    background-color: #111;
-    border-radius: 3px;
+
+  .menu li {
+    padding: 15px 10px;
   }
+
+  .menu li.button {
+    padding-right: 0;
+  }
+}
