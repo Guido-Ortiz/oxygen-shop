@@ -1,0 +1,41 @@
+.back--to--top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    // border-radius: 50%;
+    background: $color-principal;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .back--to--top:hover {
+    opacity: 60%;
+  }
+  
+  .hidden {
+    opacity: 0%;
+  }
+  
+  .back--to--top--icon {
+    width: 1rem;
+    height: 1rem;
+    color: #fff;
+    // border: 1px solid red;
+    margin-right: 5px;
+  }
+  
+  .progress--bar {
+    height: 1rem;
+    background: $color-principal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    // border: 1px solid red;
+  }
