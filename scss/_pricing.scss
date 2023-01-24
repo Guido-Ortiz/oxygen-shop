@@ -2,7 +2,6 @@
 @media (min-width:992px){
 
     .pricing {
-        // border: 1px solid red;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -29,9 +28,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        // height: 1000px;
-        // margin-left: 180px;
-        // border: 1px solid greenyellow;
     }
     
     .pricing--item {
@@ -69,7 +65,6 @@
         }
     
         div {
-            // border: 1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -81,7 +76,6 @@
             }
     
             h4 {
-                // border: 1px solid gold;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
@@ -148,7 +142,6 @@
         }
     
         div {
-            // border: 1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -160,7 +153,6 @@
             }
     
             h4 {
-                // border: 1px solid gold;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
@@ -195,10 +187,6 @@
     }
     
     .pricing--item--three {
-        // position: relative;
-        // width: 372px;
-        // height: 500px;
-        // background: #FFFFFF;
         border: 1px solid #55DFB4;
         border-radius: 18px;
         display: flex;
@@ -229,7 +217,6 @@
         }
     
         div {
-            // border: 1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -241,7 +228,6 @@
             }
     
             h4 {
-                // border: 1px solid gold;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
@@ -265,7 +251,6 @@
     @media (max-width:425px){
         
         .pricing {
-            // border: 1px solid red;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -306,7 +291,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            // margin-right: 59px;
             margin-bottom: 60px;
             padding-bottom: 60px;
             
@@ -329,11 +313,9 @@
                 line-height: 64px;
                 color: $color-uno;
                 margin-top: 14px;
-                // margin-bottom: 73px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -345,7 +327,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -409,11 +390,9 @@
                 line-height: 70px;
                 color: #07ACE6;
                 margin-top: 14px;
-                // margin-bottom: 63px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -425,7 +404,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -460,10 +438,6 @@
         }
         
         .pricing--item--three {
-            // position: relative;
-            // width: 372px;
-            // height: 500px;
-            // background: #FFFFFF;
             border: 1px solid #55DFB4;
             border-radius: 18px;
             display: flex;
@@ -490,11 +464,9 @@
                 line-height: 70px;
                 color: #55DFB4;
                 margin-top: 14px;
-                // margin-bottom: 73px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -506,7 +478,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -529,7 +500,6 @@
     // TABLETS
     @media (min-width:425px) and (max-width:992px){
         .pricing {
-            // border: 1px solid red;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -570,7 +540,6 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            // margin-right: 59px;
             margin-bottom: 60px;
             padding-bottom: 60px;
             
@@ -593,11 +562,9 @@
                 line-height: 64px;
                 color: $color-uno;
                 margin-top: 14px;
-                // margin-bottom: 73px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -609,7 +576,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -673,11 +639,9 @@
                 line-height: 70px;
                 color: #07ACE6;
                 margin-top: 14px;
-                // margin-bottom: 63px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -689,7 +653,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -724,10 +687,6 @@
         }
         
         .pricing--item--three {
-            // position: relative;
-            // width: 372px;
-            // height: 500px;
-            // background: #FFFFFF;
             border: 1px solid #55DFB4;
             border-radius: 18px;
             display: flex;
@@ -754,11 +713,9 @@
                 line-height: 70px;
                 color: #55DFB4;
                 margin-top: 14px;
-                // margin-bottom: 73px;
             }
         
             div {
-                // border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -770,7 +727,6 @@
                 }
         
                 h4 {
-                    // border: 1px solid gold;
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
