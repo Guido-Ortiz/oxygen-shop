@@ -21,6 +21,14 @@
 
 <body>
 
+    <div class="progress--bar"></div>
+    <button class="back--to--top hidden">
+        <span class="material-symbols-outlined back--to--top--icon">
+            vertical_align_top
+        </span>
+    </button>
+    <div class="progress--bar"></div>
+
     <!-- NAVBAR -->
     <div class="nav">
         <input type="checkbox" id="nav-check">
@@ -234,17 +242,17 @@
                     </div>
                 </div>
             </div>
-            <div class="form--data">
+            <form class="form--data" onsubmit="return validacion()">
                 <div>
                     <label>Name</label>
-                    <input type="text" class="form--input" />
+                    <input type="text" class="form--input" id="name" minlength=2 maxlength=100 />
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" class="form--input" />
+                    <input type="email" class="form--input" id="email" />
                 </div>
                 <div class="form--consent">
-                    <input type="checkbox" class="form--checkbox" />
+                    <input type="checkbox" class="form--checkbox" id="checkbox" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae, magnam sint
                         voluptate at
                         corrupti sequi maiores alias neque vel soluta blanditiis porro aliquam deleniti praesentium
@@ -252,7 +260,7 @@
                         nihil in facilis.</p>
                 </div>
                 <button>Send</button>
-            </div>
+            </form>
         </div>
 
         <!-- FOOTER -->
@@ -274,6 +282,56 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            const showOnPx = 100;
+            const backToTopButton = document.querySelector(".back--to--top");
+            const pageProgressBar = document.querySelector(".progress--bar");
+
+            const scrollContainer = () => {
+                return document.documentElement || document.body;
+            };
+
+            const goToTop = () => {
+                document.body.scrollIntoView({
+                    behavior: "smooth"
+                });
+            };
+
+            document.addEventListener("scroll", () => {
+                console.log("Scroll Height: ", scrollContainer().scrollHeight);
+                console.log("Client Height: ", scrollContainer().clientHeight);
+
+                const scrolledPercentage =
+                    (scrollContainer().scrollTop /
+                        (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+                    100;
+
+                pageProgressBar.style.width = `${scrolledPercentage}%`;
+
+                if (scrollContainer().scrollTop > showOnPx) {
+                    backToTopButton.classList.remove("hidden");
+                } else {
+                    backToTopButton.classList.add("hidden");
+                }
+            });
+
+            backToTopButton.addEventListener("click", goToTop);
+
+
+
+            // validacion del form
+            function validacion() {
+                valor = document.getElementById("email").value;
+                if (!((/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(valor)))) {
+                    alert("Invalid E-mail address");
+                }
+                elemento = document.getElementById("checkbox");
+                if (!elemento.checked) {
+                    alert('Check terms & conditions')
+                }
+            }
+        </script>
 
 </body>
 
