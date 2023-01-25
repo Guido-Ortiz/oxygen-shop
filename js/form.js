@@ -18,8 +18,6 @@ document.getElementById("btn-id").addEventListener("click", async function () {
         },
       })
       const data = await result.json();
-      console.log(data)
-      alert('form sent!')
   }
   catch (e) {
     console.log(e)

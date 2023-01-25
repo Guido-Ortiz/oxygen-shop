@@ -139,15 +139,13 @@
 
     <!-- PRICING SECTION -->
     <div class="pricing" id="pricing">
-        <h3 class="pricing--title">
-            Pricing
-            <select id="select" onchange="selectOption()">
-                <option value="" selected disabled hidden>Choose currency</option>
-                <option value="euros">EUR</option>
-                <option value="dolars">USD</option>
-                <option value="pounds">GBP</option>
-            </select>
-        </h3>
+        <h3 class="pricing--title">Pricing</h3>
+        <select id="select" class="select" onchange="selectOption()">
+            <option value="" selected disabled hidden>Choose currency</option>
+            <option value="euros">EUR</option>
+            <option value="dolars">USD</option>
+            <option value="pounds">GBP</option>
+        </select>
         <div class="pricing--items">
             <div class="pricing--item">
                 <h3>Basic</h3>
@@ -238,7 +236,6 @@
         <!-- SLIDER -->
 
         <div class="slideshow-container">
-
             <div class="mySlides fade">
                 <img src="./resources/img1.jpg" style="width:100%">
             </div>
@@ -330,7 +327,7 @@
                 <h2>Subscribe to our newsletter</h2>
                 <p>Please be sure not to miss our fantastic newsletter</p>
                 <div class="modal--container">
-                    <input type="email" placeholder="Subscribe with your email..."/>
+                    <input type="email" placeholder="Subscribe with your email..." />
                     <button class="modal--btn">Suscribe</button>
                 </div>
             </div>
@@ -372,60 +369,16 @@
             });
 
             backToTopButton.addEventListener("click", goToTop);
-
-
-
-
-
-
-
-            // validacion del form
-            function validacion() {
-                valor = document.getElementById("email").value;
-                if (!((/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(valor)))) {
-                    alert("Invalid E-mail address");
-                }
-                elemento = document.getElementById("checkbox");
-                if (!elemento.checked) {
-                    alert('Check terms & conditions')
-                }
-            }
-
-
-            // SLIDER
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
+            
 
         </script>
 
 </body>
 
+<script src="./js/slider.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/money.js"></script>
 <script src="./js/form.js"></script>
+<script src="./js/validation.js"></script>
 
 </html>
