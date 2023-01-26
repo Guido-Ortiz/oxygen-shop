@@ -1006,7 +1006,7 @@ body {
     text-align: center;
     color: #000000;
     padding-top: 127.5px;
-    margin-bottom: 71px;
+    margin-bottom: 31px;
   }
   .pricing--items {
     width: 100%;
@@ -1645,6 +1645,19 @@ body {
     background: #55DFB4;
   }
 }
+.select {
+  height: 40px;
+  width: 200px;
+  border: 1px solid red;
+  border: 1px solid #07ACE6;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.select option {
+  letter-spacing: 1px;
+  color: #07ACE6;
+}
+
 #email:invalid, #name:invalid {
   border: 1px solid red;
 }
