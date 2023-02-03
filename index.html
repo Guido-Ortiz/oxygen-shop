@@ -154,23 +154,27 @@
                 <!-- <span id="text1"></span> -->
                 <span id="text1">$0</span>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>100MB HDD</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>1 Subdomain</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>3 E-mails</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" />
+                    <!-- <input type="checkbox" class="pricing--input" /> -->
+                    <img src="./resources/Cross.png" class="pricing--inputs" />
                     <h4>Two years license</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" />
+                    <img src="./resources/Cross.png" class="pricing--inputs" />
                     <h4>Full support</h4>
                 </div>
 
@@ -182,23 +186,27 @@
                 <!-- <span id="text2"></span> -->
                 <span id="text2">$25</span>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>50MB HDD</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>2 Subdomains</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>5 E-mails</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>One year license</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" />
+                    <img src="./resources/Cross.png" class="pricing--inputs" />
                     <h4>Full suport</h4>
                 </div>
 
@@ -210,23 +218,28 @@
                 <!-- <span id="text3"></span> -->
                 <span id="text3">$60</span>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>2GB HDD</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>5 Subdomains</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>20 E-mails</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>Two years license</h4>
                 </div>
                 <div>
-                    <input type="checkbox" class="pricing--input" checked />
+                    <!-- <input type="checkbox" class="pricing--input" checked /> -->
+                    <img src="./resources//check.png" class="pricing--input" />
                     <h4>Full support</h4>
                 </div>
 
@@ -280,24 +293,33 @@
                     </div>
                 </div>
             </div>
-            <form class="form--data" onsubmit="return validacion()" id="form">
+            <form class="form--data">
                 <div>
-                    <label>Name</label>
-                    <input type="text" class="form--input" id="name" minlength=2 maxlength=100 />
+                    <label for="name" class="label">NAME</label><br>
+                    <input class="input_text name form--input" name="name" id="name" type="text" minlength=2 maxlength=100><br>
+                   
                 </div>
                 <div>
-                    <label>Email</label>
-                    <input type="email" class="form--input" id="email" />
+                    <label for="email" class="label">EMAIL</label><br>
+                    <input class="input_text email form--input" name="email" id="email" type="email"><br>
                 </div>
-                <div class="form--consent">
-                    <input type="checkbox" class="form--checkbox" id="checkbox" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae, magnam sint
-                        voluptate at
-                        corrupti sequi maiores alias neque vel soluta blanditiis porro aliquam deleniti praesentium
-                        mollitia
-                        nihil in facilis.</p>
+                <div class="policy form--consent">
+                    <input type="checkbox" class="checkbox">
+                    <p class="policy_label">I here by give consent for my personal data included in my
+                        application to
+                        be processed for the
+                        purposes of the recruitment process under the European Parliament’s and Council of the
+                        European
+                        Union
+                        Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the
+                        processing of
+                        personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data
+                        Protection
+                        Directive)</p><br>
                 </div>
-                <button id="btn-id">Send</button>
+                <div class="submit_container">
+                    <button type="submit" class="submit_button">Send</button>
+                </div>
             </form>
         </div>
 
@@ -332,7 +354,8 @@
                     <button class="modal--btn">Suscribe</button>
                 </div>
             </div>
-        </div>
+        </div>        
+
         
         <script>
             const showOnPx = 100;
