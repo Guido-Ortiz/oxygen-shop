@@ -22,7 +22,7 @@ body {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.29);
   position: relative;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav > .nav-header {
@@ -477,6 +477,7 @@ body {
     line-height: 20px;
     text-align: center;
     color: #A5A5A5;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 425px) and (max-width: 992px) {
@@ -709,13 +710,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 100px;
   }
   .shop--item {
     width: 100%;
-    height: 370px;
+    height: auto;
     margin-bottom: 37px;
     display: flex;
     flex-direction: column;
@@ -749,9 +750,6 @@ body {
     color: #000000;
     margin-bottom: 30px;
   }
-  .title--three {
-    margin-top: 360px;
-  }
   .shop--item--paragraph {
     font-family: "Open Sans";
     font-style: normal;
@@ -770,6 +768,7 @@ body {
     line-height: 22px;
     color: #000000;
     margin-top: 50px;
+    margin-left: 20px;
   }
   .shop--item--separator {
     width: 90%;
@@ -794,8 +793,8 @@ body {
     z-index: 1;
   }
   .shop--item--mac img {
-    width: 193px;
-    height: 190px;
+    width: 60%;
+    height: 70%;
     align-self: center;
     margin-left: 50px;
     z-index: 1;
@@ -807,10 +806,9 @@ body {
     z-index: 1;
   }
   .shop--item--iphone img {
-    width: 193px;
-    height: 190px;
+    width: 60%;
+    height: 70%;
     align-self: center;
-    margin-top: 329px;
     margin-left: 50px;
     z-index: 1;
   }
@@ -832,7 +830,7 @@ body {
     height: 132px;
     border-radius: 50%;
     left: 70px;
-    top: 342px;
+    top: 13px;
     z-index: -1;
     background: #08A6E4;
   }
@@ -1000,6 +998,10 @@ body {
   height: 11px;
   border: 1px solid red;
   border-radius: 2px;
+}
+
+.pricing--item:hover {
+  scale: 1.1;
 }
 
 @media (min-width: 992px) {
@@ -1218,7 +1220,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     background: #F7F7F7;
-    margin-top: 600px;
   }
   .pricing--title {
     font-family: "Raleway";
@@ -1228,7 +1229,6 @@ body {
     line-height: 42px;
     text-align: center;
     color: #000000;
-    padding-top: 127.5px;
     margin-bottom: 71px;
   }
   .pricing--items {
@@ -1308,18 +1308,7 @@ body {
     border-radius: 2px;
   }
   .pricing--item--two {
-    position: relative;
-    width: 339px;
-    height: auto;
-    background: #FFFFFF;
     border: 1px solid #07ACE6;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 60px;
-    padding-bottom: 30px;
   }
   .pricing--item--two h3 {
     font-family: "Raleway";
@@ -1338,6 +1327,7 @@ body {
     line-height: 70px;
     color: #07ACE6;
     margin-top: 14px;
+    margin-bottom: 63px;
   }
   .pricing--item--two div {
     display: flex;
@@ -1661,7 +1651,8 @@ body {
   color: #07ACE6;
 }
 
-#email:invalid, #name:invalid {
+#email:invalid,
+#name:invalid {
   border: 1px solid red;
 }
 
@@ -1892,6 +1883,7 @@ body {
     border-radius: 35px;
     border: none;
     margin-top: 20px;
+    margin-left: 30px;
     align-self: center;
     color: #fff;
     margin-bottom: 59px;
@@ -2266,7 +2258,6 @@ body {
   padding: 0.5rem;
   border: none;
   cursor: pointer;
-  opacity: 100%;
   transition: opacity 0.5s;
   vertical-align: middle;
   height: 50px;
@@ -2294,5 +2285,5 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */
