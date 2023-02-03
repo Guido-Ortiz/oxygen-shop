@@ -4,6 +4,8 @@
 
 img {
   vertical-align: middle;
+  height: 30rem;
+  width: 100%;
 }
 
 .slideshow-container {
@@ -20,7 +22,7 @@ img {
   width: auto;
   height: 20px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: rgb(174, 174, 174);
   vertical-align: middle;
   padding: 16px;
   display: flex;
@@ -81,5 +83,14 @@ img {
   .prev,
   .next{
     font-size: 11px
+  }
+}
+
+
+@media (min-width:992px) {
+  img {
+    vertical-align: middle;
+    height: 30rem;
+    width: 50rem;
   }
 }

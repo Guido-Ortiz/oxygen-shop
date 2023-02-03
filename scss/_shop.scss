@@ -8,6 +8,7 @@
         justify-content: flex-start;
         align-items: center;
         padding-top: 105px;
+        z-index: -1;
     }
 
     .shop--item {
@@ -95,14 +96,14 @@
         width: 440px;
         height: 370px;
         position: relative;
-        z-index: 1;
+        z-index: 0;
 
         img {
             width: 386.4px;
             height: 219px;
             margin-top: 113px;
             margin-right: 117.5px;
-            z-index: 1;
+            z-index: -1;
         }
     }
 
@@ -110,7 +111,7 @@
         width: 684px;
         height: 370px;
         position: relative;
-        z-index: 1;
+        z-index: 0;
 
         img {
             width: 426px;

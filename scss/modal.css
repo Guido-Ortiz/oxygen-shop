@@ -34,17 +34,14 @@
   letter-spacing: 1px;
 }
 
-.modal--container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.contenido-modal {
   letter-spacing: 1px;
 }
-.modal--container input,
-.modal--container button {
+.contenido-modal input,
+.contenido-modal button {
   border-radius: 4px;
 }
-.modal--container input {
+.contenido-modal input {
   outline: none;
   height: 30px;
   width: 300px;
@@ -53,7 +50,7 @@
   border: none;
   border: 1px solid #08A6E4;
 }
-.modal--container button {
+.contenido-modal button {
   border: none;
   background-color: #08A6E4;
   color: #fff;
@@ -102,4 +99,20 @@
   color: grey;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .modal__container {
+    height: auto;
+  }
+  .modal__container p {
+    margin: 10px 0;
+  }
+  .modal__container input {
+    width: 90%;
+    margin: 20px 0;
+  }
+  .modal__container button {
+    margin: 0;
+  }
 }/*# sourceMappingURL=modal.css.map */

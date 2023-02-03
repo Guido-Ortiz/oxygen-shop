@@ -36,7 +36,7 @@
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <div class="nav-title">
-                Oxigen Shop
+                OXYGEN Shop
             </div>
         </div>
         <div class="nav-btn">
@@ -141,7 +141,9 @@
     <div class="pricing" id="pricing">
         <h3 class="pricing--title">Pricing</h3>
         <select id="select" class="select" onchange="selectOption()">
-            <option value="" selected disabled hidden>Choose currency</option>
+            <!-- <select id="select" class="select" > -->
+            <!-- <option value="dolars" selected disabled hidden>Choose currency</option> -->
+            <option value="euros">Choose currency</option>
             <option value="euros">EUR</option>
             <option value="dolars">USD</option>
             <option value="pounds">GBP</option>
@@ -149,8 +151,8 @@
         <div class="pricing--items">
             <div class="pricing--item">
                 <h3>Basic</h3>
-                <span id="text1"></span>
-                <!-- <span id="text1">$0</span> -->
+                <!-- <span id="text1"></span> -->
+                <span id="text1">$0</span>
                 <div>
                     <input type="checkbox" class="pricing--input" checked />
                     <h4>100MB HDD</h4>
@@ -175,10 +177,10 @@
                 <button class="pricing--btn">Begin</button>
             </div>
 
-            <div class="pricing--item--two">
+            <div class="pricing--item pricing--item--two">
                 <h3>Professional</h3>
-                <span id="text2"></span>
-                <!-- <span id="text2">$25</span> -->
+                <!-- <span id="text2"></span> -->
+                <span id="text2">$25</span>
                 <div>
                     <input type="checkbox" class="pricing--input" checked />
                     <h4>50MB HDD</h4>
@@ -200,13 +202,13 @@
                     <h4>Full suport</h4>
                 </div>
 
-                <button class="pricing--btn--two">Begin</button>
+                <button class="pricing--btn pricing--btn--two">Begin</button>
             </div>
 
             <div class="pricing--item pricing--item--three">
                 <h3>Premium</h3>
-                <span id="text3"></span>
-                <!-- <span id="text3">$60</span> -->
+                <!-- <span id="text3"></span> -->
+                <span id="text3">$60</span>
                 <div>
                     <input type="checkbox" class="pricing--input" checked />
                     <h4>2GB HDD</h4>
@@ -234,22 +236,21 @@
 
 
         <!-- SLIDER -->
-
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="./resources/img1.jpg" style="width:100%">
+                <img src="./resources/img1.jpg">
             </div>
 
             <div class="mySlides fade">
-                <img src="./resources/img2.jpg" style="width:100%">
+                <img src="./resources/img2.jpg">
             </div>
 
             <div class="mySlides fade">
-                <img src="./resources/img3.jpg" style="width:100%">
+                <img src="./resources/img3.jpg">
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">-</a>
-            <a class="next" onclick="plusSlides(1)">+</a>
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
 
         </div>
 
@@ -310,12 +311,12 @@
             </div>
             <div class="footer--icons">
                 <div>
-                    <i class="fa fa-twitter"></i>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <!-- <i class="fa-brands fa-twitter"></i> -->
                 </div>
 
                 <div>
-                    <i class="fa fa-facebook" style="background: #3B5998;"></i>
+                    <a href="https://es-es.facebook.com/"><i class="fa fa-facebook" style="background: #3B5998;"></i></a>
                 </div>
             </div>
         </footer>
@@ -332,9 +333,7 @@
                 </div>
             </div>
         </div>
-
-
-
+        
         <script>
             const showOnPx = 100;
             const backToTopButton = document.querySelector(".back--to--top");
@@ -351,9 +350,6 @@
             };
 
             document.addEventListener("scroll", () => {
-                // console.log("Scroll Height: ", scrollContainer().scrollHeight);
-                // console.log("Client Height: ", scrollContainer().clientHeight);
-
                 const scrolledPercentage =
                     (scrollContainer().scrollTop /
                         (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *

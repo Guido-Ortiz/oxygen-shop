@@ -1,6 +1,7 @@
 // MODAL
 var modal = document.getElementById("ventanaModal");
 
+
 // Botón que abre el modal
 // var boton = document.getElementById("abrirModal");
 

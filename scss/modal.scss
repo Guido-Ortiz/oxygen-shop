@@ -37,10 +37,10 @@
   }
 }
 
-.modal--container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.contenido-modal {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
   letter-spacing: 1px;
 
   input,
@@ -79,6 +79,7 @@
     top: -300px;
     opacity: 0
   }
+
   to {
     top: 0;
     opacity: 1
@@ -100,4 +101,21 @@
   color: grey;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+@media only screen and (max-width:425px){
+  .modal__container{
+    height: auto;
+    p{
+      margin: 10px 0;
+    }
+    input{
+      width: 90%;
+      margin: 20px 0;
+    }
+    button{
+      margin: 0;
+    }
+  }
 }
